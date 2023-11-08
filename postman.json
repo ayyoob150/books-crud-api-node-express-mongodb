@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "622b0ca6-fe5b-4eaa-9714-64bfb415460b",
+		"name": "Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29255104"
+	},
+	"item": [
+		{
+			"name": "add-book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"A Short Guide to a Happy Life\",\r\n    \"author\" : \"Anna Quindlen\",\r\n    \"summary\" : \"The Book in Three Sentences: The only thing you have that nobody else has is control of your life. The hardest thing of all is to learn to love the journey, not the destination. Get a real life rather than frantically chasing the next level of success.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2002/add-book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"add-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all-book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2002/all-book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"all-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2002/6548c1cf43b2264be4f616ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"6548c1cf43b2264be4f616ab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-a-book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2002/6548ce7e63f5d82b19cd881f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"6548ce7e63f5d82b19cd881f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"abccc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2002/update-book/6548d0a674abb0fa9f5eb83a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"update-book",
+						"6548d0a674abb0fa9f5eb83a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
